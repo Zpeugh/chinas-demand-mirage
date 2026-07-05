@@ -162,6 +162,41 @@ svg text{font-family:'Archivo',sans-serif}
 .scen .st{font-family:'Bricolage Grotesque',sans-serif;font-weight:750;font-size:15.5px;margin:5px 0 4px}
 .scen p{font-size:12.5px;line-height:1.5;color:var(--ink-soft)}
 .scen p b{color:var(--ink)}
+
+.regime{background:var(--paper);border:1.5px solid var(--blood);border-left:6px solid var(--blood);padding:14px 17px;margin-bottom:16px}
+.regime .rgk{font-size:10px;letter-spacing:.24em;text-transform:uppercase;font-weight:700;color:var(--blood);margin-bottom:6px}
+.regime p{font-size:13px;line-height:1.55;color:var(--ink-soft)}
+.regime p b{color:var(--blood)}
+/* sign-flip + ladder + arithmetic */
+.flipgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}
+@media (max-width:900px){.flipgrid{grid-template-columns:1fr}}
+.flip{background:var(--paper);border:1.5px solid var(--ink);border-top:4px solid var(--blood);padding:14px 16px}
+.flip .fk{font-size:9.5px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--blood)}
+.flip .ft{font-family:'Bricolage Grotesque',sans-serif;font-weight:750;font-size:16px;margin:5px 0 5px}
+.flip p{font-size:12.5px;line-height:1.5;color:var(--ink-soft)}
+.flip p b{color:var(--ink)}
+.lg .sw.dotink{border-top:3px dotted #17130E}
+.lg .sw.dotblood{border-top:3px dotted #7D0F0F}
+.ladderpanel{background:var(--paper);border:1.5px solid var(--ink);padding:14px 16px;display:flex;flex-direction:column}
+.lk{font-family:'Bricolage Grotesque',sans-serif;font-weight:750;font-size:16px;text-transform:uppercase;letter-spacing:.02em}
+.ln{font-size:11.5px;color:var(--ink-soft);line-height:1.45;margin:5px 0 12px}
+.lrow{display:grid;grid-template-columns:1fr 1.1fr;gap:10px;align-items:center;padding:7px 0;border-top:1px solid var(--tan)}
+.lrow .ll{font-size:12px;font-weight:700;line-height:1.3}
+.lrow .ll span{display:block;font-weight:400;font-size:10.5px;color:var(--ink-soft);line-height:1.35}
+.lbar{display:flex;align-items:center;gap:8px}
+.lbar i{display:block;height:12px;background:var(--tan-deep);border:1px solid var(--ink);flex:0 1 auto}
+.lbar b{font-family:'Bricolage Grotesque',sans-serif;font-size:14px;white-space:nowrap}
+.lref{margin-top:auto;padding-top:10px;font-size:10px;color:var(--ink-soft);border-top:1px solid var(--tan);line-height:1.45}
+.dpanel{background:var(--paper);border:1.5px solid var(--ink);padding:14px 17px;margin-top:14px}
+.dtable{width:100%;border-collapse:collapse;margin-top:10px}
+.dtable td{font-size:12.5px;padding:6px 8px;border-top:1px solid var(--tan);line-height:1.35}
+.dtable td:last-child{text-align:right;font-family:'Bricolage Grotesque',sans-serif;font-size:14px;white-space:nowrap;width:110px}
+.dtable td.ind{padding-left:26px;color:var(--ink-soft);font-size:11.5px}
+.dtable tr.hl td{background:rgba(125,15,15,.07);border-top:1.5px solid var(--blood);color:var(--blood);font-weight:600}
+.dnote{margin-top:10px;font-size:11.5px;line-height:1.5;color:var(--ink-soft)}
+.scen3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+@media (max-width:1000px){.scen3{grid-template-columns:1fr}}
+.scen .crk{margin-top:8px;padding-top:8px;border-top:1px dashed var(--tan-line)}
 .fwdnote{margin-top:14px;background:var(--paper);border:1.5px solid var(--ink);border-left:5px solid var(--blood);padding:14px 17px}
 .fwdnote p{font-size:13px;line-height:1.55;color:var(--ink-soft);max-width:1200px}
 .fwdnote p b{color:var(--ink)}
@@ -198,8 +233,9 @@ svg text{font-family:'Archivo',sans-serif}
   <div class="statrow rv">
     <div class="stat"><div class="n">1.2&ndash;1.4<em>B</em></div><div class="l">bbl total crude stocks, end-2025 (EIA / OIES)</div></div>
     <div class="stat"><div class="n">+1.1</div><div class="l">mb/d avg. added to inventories in 2025 (EIA)</div></div>
-    <div class="stat"><div class="n"><em>&minus;3.9</em></div><div class="l">mb/d import cut Feb&rarr;May '26 = 74% of global decline</div></div>
+    <div class="stat"><div class="n"><em>&minus;5.3</em></div><div class="l">mb/d import cut Feb&rarr;Jun '26; June seaborne lowest since 2016</div></div>
     <div class="stat"><div class="n">1/5<em>&times;</em></div><div class="l">domestic price volatility vs Brent through the March spike</div></div>
+    <div class="stat"><div class="n">$72</div><div class="l">Brent, Jul 3: pre-war level after the biggest monthly drop since 2020</div></div>
   </div>
 
   <!-- ============ 01 CHART ============ -->
@@ -230,6 +266,7 @@ svg text{font-family:'Archivo',sans-serif}
           <symbol id="ic-e9" viewBox="0 0 20 20"><path d="M4 4 H16 L11.5 9.5 V15 L8.5 16.5 V9.5 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
           <symbol id="ic-e10" viewBox="0 0 20 20"><circle cx="10" cy="10" r="4.4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10 2.5 V5 M10 15 V17.5 M2.5 10 H5 M15 10 H17.5 M4.7 4.7 L6.5 6.5 M13.5 13.5 L15.3 15.3 M15.3 4.7 L13.5 6.5 M6.5 13.5 L4.7 15.3" stroke="currentColor" stroke-width="1.6"/></symbol>
           <symbol id="ic-e11" viewBox="0 0 20 20"><circle cx="7.4" cy="10" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12.6" cy="10" r="4.6" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+          <symbol id="ic-e12" viewBox="0 0 20 20"><path d="M4 7 H14 M11.5 4.5 L14 7 L11.5 9.5 M16 13 H6 M8.5 10.5 L6 13 L8.5 15.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
         </defs>
 
         <g stroke="#E3DBC9" stroke-width="1">
@@ -265,14 +302,14 @@ svg text{font-family:'Archivo',sans-serif}
           L668.3,179.3 L587.2,160.3 L506.1,154 L425,185.7
           L343.9,211 L262.8,236.3 L181.7,249 L100.6,217.3 Z"/>
         <path fill="#E5A08A" fill-opacity=".85" d="
-          M1427.6,189.5 L1437.3,192 L1463.3,217.3 L1492.4,249 L1518.4,261.7
-          L1518.4,331.3 L1492.4,350.3 L1463.3,306 L1437.3,236.3 Z"/>
+          M1427.6,189.5 L1437.3,192 L1463.3,217.3 L1492.4,249 L1518.4,268
+          L1518.4,375.7 L1492.4,350.3 L1463.3,306 L1437.3,236.3 Z"/>
 
         <g>
           <text class="halo" x="860" y="174" font-size="12" font-weight="700" fill="#6B5F45" letter-spacing="2" text-anchor="middle">STOCKPILE BUILDS &middot; &asymp;0.6&ndash;1.9 MB/D</text>
           <text class="halo" x="860" y="189" font-size="10" fill="#6B5F45" text-anchor="middle" letter-spacing="1">&asymp;0.9&ndash;1.0B BBL CUMULATIVE, 2022&ndash;FEB 2026</text>
           <text class="halo" x="1556" y="278" font-size="11" font-weight="700" fill="#7D0F0F" letter-spacing="1" text-anchor="end">DRAWDOWN</text>
-          <text class="halo" x="1556" y="291" font-size="10" fill="#7D0F0F" text-anchor="end">&minus;1.5 mb/d</text>
+          <text class="halo" x="1556" y="291" font-size="10" fill="#7D0F0F" text-anchor="end">&minus;1.5&ndash;1.7 mb/d</text>
         </g>
 
         <g>
@@ -289,19 +326,20 @@ svg text{font-family:'Archivo',sans-serif}
           <polyline fill="none" stroke="#7D0F0F" stroke-width="3" stroke-dasharray="9 6" stroke-linejoin="round" stroke-linecap="round" points="
             100.6,217.3 181.7,249 262.8,236.3 343.9,211 425,185.7 506.1,154 587.2,160.3 668.3,179.3
             749.4,192 830.6,211 911.7,217.3 992.8,198.3 1073.9,211 1155,192 1236.1,198.3 1317.2,192
-            1382.2,185.7 1408.2,185.7 1437.3,192 1463.3,217.3 1492.4,249 1518.4,261.7"/>
+            1382.2,185.7 1408.2,185.7 1437.3,192 1463.3,217.3 1492.4,249 1518.4,268"/>
         </g>
         <polyline class="drawline" fill="none" stroke="#17130E" stroke-width="3.2" stroke-linejoin="round" stroke-linecap="round" points="
           100.6,198.3 181.7,236.3 262.8,217.3 343.9,185.7 425,147.7 506.1,109.7 587.2,122.3 668.3,141.3
           749.4,141.3 830.6,160.3 911.7,166.7 992.8,128.7 1073.9,147.7 1155,84.3 1236.1,109.7 1317.2,65.3
-          1382.2,90.7 1408.2,103.3 1437.3,236.3 1463.3,306 1492.4,350.3 1518.4,331.3"/>
+          1382.2,90.7 1408.2,103.3 1437.3,236.3 1463.3,306 1492.4,350.3 1518.4,375.7"/>
 
         <g font-size="10" font-weight="600">
           <circle cx="1317.2" cy="65.3" r="4" fill="#17130E"/>
           <text class="halo" x="1398" y="50" text-anchor="end" fill="#17130E">NOV '25: imports 12.43 mb/d</text>
           <text class="halo" x="1398" y="63" text-anchor="end" fill="#17130E">1.88 mb/d to tanks</text>
           <circle cx="1492.4" cy="350.3" r="4" fill="#7D0F0F"/>
-          <text class="halo" x="1556" y="370" font-size="10" fill="#7D0F0F" text-anchor="end">MAY '26: 7.8 mb/d &middot; decade low</text>
+          <text class="halo" x="1556" y="366" font-size="10" fill="#7D0F0F" text-anchor="end">MAY '26: 7.8 mb/d &middot; decade low</text>
+          <text class="halo" x="1556" y="380" font-size="10" fill="#7D0F0F" text-anchor="end">JUN '26: seaborne 6.4 &middot; lowest since 2016</text>
           <circle cx="506.1" cy="154" r="4" fill="#7D0F0F"/>
           <line x1="506.1" y1="160" x2="506.1" y2="240" stroke="#7D0F0F" stroke-width="0.8"/>
           <text class="halo" x="512" y="252" fill="#7D0F0F">APR '23: diesel peaks 4.7 mb/d, then structural decline</text>
@@ -376,6 +414,12 @@ svg text{font-family:'Archivo',sans-serif}
             <circle class="badge" cx="1477" cy="400" r="10" fill="#FFFFFF" stroke="#7D0F0F" stroke-width="1.6" transform-origin="1477 400"/>
             <use href="#ic-e11" x="1469" y="392" width="16" height="16" color="#7D0F0F"/>
           </g>
+          <g class="pin" data-id="e12" data-x="1512">
+            <line x1="1512" y1="420" x2="1512" y2="410" stroke="#7D0F0F" stroke-width="1.4"/>
+            <circle class="ring" cx="1512" cy="400" r="14" fill="none" stroke="#7D0F0F" stroke-width="1.4"/>
+            <circle class="badge" cx="1512" cy="400" r="10" fill="#FFFFFF" stroke="#7D0F0F" stroke-width="1.6" transform-origin="1512 400"/>
+            <use href="#ic-e12" x="1504" y="392" width="16" height="16" color="#7D0F0F"/>
+          </g>
         </g>
       </svg>
       </div>
@@ -439,6 +483,10 @@ svg text{font-family:'Archivo',sans-serif}
       <div class="ev rv" data-id="e11">
         <div class="top"><span class="bdg war"><svg width="18" height="18" viewBox="0 0 20 20" color="#7D0F0F"><use href="#ic-e11"/></svg></span><div><div class="dt"><b>May 14&ndash;15 2026</b> &middot; both</div><div class="et">Xi&ndash;Trump summit</div></div></div>
         <p>Beijing summit; both agree the strait must open. Brent holds near $100. China's cut, not diplomacy, is the price cap. (CNBC / Morgan Stanley)</p>
+      </div>
+      <div class="ev rv" data-id="e12">
+        <div class="top"><span class="bdg war"><svg width="18" height="18" viewBox="0 0 20 20" color="#7D0F0F"><use href="#ic-e12"/></svg></span><div><div class="dt"><b>Jun 27&ndash;Jul 2026</b> &middot; both</div><div class="et">MoU + reopening</div></div></div>
+        <p>US&ndash;Iran memorandum, 60-day framework, temporary sanctions waiver; JMIC widens the corridor; Hormuz flows top 10 mb/d. Brent returns to pre-war $72, the biggest monthly drop since 2020. (Al Jazeera / TradingEconomics)</p>
       </div>
     </div>
   </section>
@@ -548,21 +596,44 @@ svg text{font-family:'Archivo',sans-serif}
   <!-- ============ 05 ROUTE FORWARD ============ -->
   <section class="sec">
     <div class="sechead rv"><span class="no">05</span><h2>The route forward</h2><span class="rule"></span></div>
-    <p class="secnote rv">Where Chinese crude demand goes from July 2026. The tradable object is not consumption growth. It is the restock wedge: the same mechanism that built the phantom, running in reverse and then forward again.</p>
+    <div class="regime rv"><div class="rgk">Regime update &middot; Jul 3 2026</div>
+      <p>The transition arrived faster than base case. A US&ndash;Iran memorandum with a 60-day negotiation framework and a temporary sanctions waiver has the strait reopening: Hormuz flows back above 10 mb/d, Saudi exports at ~90% of baseline, UAE fully restored, a 54-supertanker backlog arriving in waves plus 58&ndash;68M bbl of Iranian crude on the water (Kpler). <b>Brent $71&ndash;72, pre-war levels</b>, after the biggest monthly drop since 2020; Morgan Stanley cut forecasts twice in two weeks warning of glut. And China went the other way: <b>June seaborne arrivals 6.4 mb/d, the lowest since Oct 2016</b>. Beijing is letting the glut build with spot now inside its documented sub-$70s fill zone. JPMorgan pegs ~3 mb/d of the cut as temporary, reversing from August as state restocking begins.</p></div>
+    <p class="secnote rv">The naive read says less Chinese buying means lower Brent. That holds in exactly one of three configurations. Chinese imports are endogenous: the level tells you nothing until you condition on why. The supply state sets the price level, Chinese elasticity sets the cap while stocks last, and Chinese restock policy sets the floor after normalization.</p>
+
+    <div class="flipgrid">
+      <div class="flip rv">
+        <div class="fk">Config 1 &middot; Mar&ndash;Jun 2026, now exited</div>
+        <div class="ft">Buying less because barrels don't exist</div>
+        <p>Blockade removes the supply; low imports and high prices coexist because the cut is the shock absorber, not the shock. China's elasticity was the price <b>cap</b>: why Brent peaked at $118 rather than $200+ and held near $95 into June. This configuration governed Mar&ndash;Jun; <b>the tape exited it in late June</b> as the strait reopened.</p>
+      </div>
+      <div class="flip rv">
+        <div class="fk">Config 2 &middot; The trapdoor, now live</div>
+        <div class="ft">Buying less by choice</div>
+        <p>Post-normalization, if Beijing skips the restock: demand-led market, and the intuition is right. Consensus models still carry <b>~1 mb/d of "demand" that was never consumption</b>. Low imports, low price. <b>June ran this play</b>: record-low buying into a reopening market, depressing the price Beijing will restock at.</p>
+      </div>
+      <div class="flip rv">
+        <div class="fk">Config 3 &middot; The floor</div>
+        <div class="ft">The restock bid</div>
+        <p>Discretionary and price-sensitive: it appears under ~$80&ndash;85 and vanishes on rips. A <b>floor and a volatility compressor</b>, not a driver. The 2023&ndash;25 phantom era was this configuration running continuously. OIES documents Brent at or below ~$70 as the fill trigger; <b>spot is there now</b>, and JPMorgan pegs the restock pulse from August.</p>
+      </div>
+    </div>
+
     <div class="fwd">
       <div class="fwdchart rv">
         <div class="fl">
-          <div class="lg"><span class="sw apparent"></span>Imports + output, base path</div>
+          <div class="lg"><span class="sw apparent"></span>Base: imports + output</div>
           <div class="lg"><span class="sw true"></span>Est. true consumption</div>
+          <div class="lg"><span class="sw dotink"></span>Bear: no restock</div>
+          <div class="lg"><span class="sw dotblood"></span>Bull: restock race</div>
           <div class="lg"><span class="sw build"></span>Restock wedge</div>
         </div>
         <div class="fscroll"><svg id="fchart" viewBox="0 0 780 320" preserveAspectRatio="xMidYMid meet">
           <g stroke="#E3DBC9" stroke-width="1">
-            <line x1="40" y1="88" x2="760" y2="88"/><line x1="40" y1="136" x2="760" y2="136"/>
-            <line x1="40" y1="184" x2="760" y2="184"/><line x1="40" y1="232" x2="760" y2="232"/>
+            <line x1="40" y1="50" x2="760" y2="50"/><line x1="40" y1="107.5" x2="760" y2="107.5"/>
+            <line x1="40" y1="165" x2="760" y2="165"/><line x1="40" y1="222.5" x2="760" y2="222.5"/>
           </g>
           <g font-size="10" fill="#8A7E63" text-anchor="end">
-            <text x="34" y="92">15</text><text x="34" y="140">14</text><text x="34" y="188">13</text><text x="34" y="236">12</text>
+            <text x="34" y="54">16</text><text x="34" y="111">15</text><text x="34" y="169">14</text><text x="34" y="226">13</text>
           </g>
           <line x1="40" y1="280" x2="760" y2="280" stroke="#17130E" stroke-width="1.5"/>
           <g font-size="10.5" fill="#17130E" font-weight="600" letter-spacing="1">
@@ -572,44 +643,73 @@ svg text{font-family:'Archivo',sans-serif}
             <line x1="220" y1="280" x2="220" y2="286"/><line x1="580" y1="280" x2="580" y2="286"/>
           </g>
 
-          <path fill="#E5A08A" fill-opacity=".85" d="M40,212.8 L97,161 L40,160 Z"/>
-          <path fill="#CFC0A0" fill-opacity=".75" d="M97,161 L130,140.8 L220,88 L400,107.2 L580,155.2 L760,184
-            L760,188.8 L580,179.2 L400,169.6 L220,164.8 L97,161 Z"/>
+          <path fill="#E5A08A" fill-opacity=".85" d="M40,188 L130,161 L141,168.5 L130,176.5 L40,274 Z"/>
+          <path fill="#CFC0A0" fill-opacity=".75" d="M141,168.5 L220,113.3 L400,119 L580,136.3 L760,147.8
+            L760,165 L580,156.4 L400,150.6 L220,153.5 Z"/>
 
-          <polyline fill="none" stroke="#7D0F0F" stroke-width="2.6" stroke-dasharray="8 5" stroke-linejoin="round" points="40,160 220,164.8 400,169.6 580,179.2 760,188.8"/>
-          <polyline fill="none" stroke="#17130E" stroke-width="2.8" stroke-linejoin="round" points="40,212.8 130,140.8 220,88 400,107.2 580,155.2 760,184"/>
-          <polyline fill="none" stroke="#17130E" stroke-width="1.6" stroke-dasharray="2 5" stroke-linejoin="round" points="40,212.8 220,203.2 400,145.6 580,97.6 760,136"/>
-          <polyline fill="none" stroke="#7D0F0F" stroke-width="1.6" stroke-dasharray="2 5" stroke-linejoin="round" points="40,212.8 220,241.6 400,256 580,208 760,232"/>
+          <polyline fill="none" stroke="#7D0F0F" stroke-width="2.6" stroke-dasharray="8 5" stroke-linejoin="round" points="40,188 220,153.5 400,150.6 580,156.4 760,165"/>
+          <polyline fill="none" stroke="#17130E" stroke-width="2.8" stroke-linejoin="round" points="40,274 130,176.5 220,113.3 400,119 580,136.3 760,147.8"/>
+          <polyline fill="none" stroke="#17130E" stroke-width="1.6" stroke-dasharray="2 5" stroke-linejoin="round" points="40,274 220,170.8 400,170.8 580,182.3 760,193.8"/>
+          <polyline fill="none" stroke="#7D0F0F" stroke-width="1.6" stroke-dasharray="2 5" stroke-linejoin="round" points="40,274 220,90.3 400,78.8 580,107.5 760,130.5"/>
 
           <g font-size="10" font-weight="700">
-            <text class="halo" x="300" y="76" fill="#6B5F45" letter-spacing="1.5">RESTOCK WEDGE (PROJECTED)</text>
-            <text class="halo" x="756" y="130" text-anchor="end" fill="#17130E">grind</text>
-            <text class="halo" x="756" y="178" text-anchor="end" fill="#17130E">base</text>
-            <text class="halo" x="756" y="226" text-anchor="end" fill="#7D0F0F">escalation</text>
+            <text class="halo" x="330" y="142" fill="#6B5F45" letter-spacing="1.5">RESTOCK WEDGE (BASE)</text>
+            <text class="halo" x="756" y="126" text-anchor="end" fill="#7D0F0F">bull</text>
+            <text class="halo" x="756" y="145" text-anchor="end" fill="#17130E">base</text>
+            <text class="halo" x="756" y="199" text-anchor="end" fill="#17130E">bear</text>
           </g>
-          <text x="40" y="26" font-size="10" fill="#8A7E63" letter-spacing="1.5">MB/D CRUDE &middot; PROJECTION, ANCHORED TO SCENARIOS AT RIGHT</text>
+          <text x="40" y="26" font-size="10" fill="#8A7E63" letter-spacing="1.5">MB/D CRUDE &middot; PROJECTION &middot; ALL PATHS ARE SCENARIO, NOT DATA</text>
         </svg></div>
       </div>
-      <div class="scens">
-        <div class="scen rv">
-          <div class="sk"><span class="chip" style="border-top:3px solid #17130E"></span>Base &middot; strait reopens H2 '26</div>
-          <div class="st">Snap-back, then the restock bid</div>
-          <p>The JMIC corridor keeps widening; non-Western flags already transit. Imports recover to <b>10.5&ndash;11.5 mb/d</b> by Q4 as discounted flows resume, then overshoot consumption through 2027 as <b>0.5&ndash;1.0 mb/d of mandatory restocking</b> rebuilds the 200&ndash;300M bbl drawn. Brent 85&ndash;100 with a standing bid under every dip.</p>
-        </div>
-        <div class="scen rv">
-          <div class="sk"><span class="chip" style="border-top:3px dotted #17130E"></span>Grind &middot; partial closure into '27</div>
-          <div class="st">Rationed draws, delayed restock</div>
-          <p>Working stock floors (60&ndash;90 days) force continued run cuts, coal-to-chemicals substitution and product export bans. Imports hold <b>8.5&ndash;9.5 mb/d</b>; the restock wave shifts right into 2027&ndash;28 and gets larger. Brent 100&ndash;130. Every extra quarter makes more of the demand loss permanent.</p>
-        </div>
-        <div class="scen rv">
-          <div class="sk"><span class="chip" style="border-top:3px dotted #7D0F0F"></span>Escalation &middot; strait shut, Russian exports degraded</div>
-          <div class="st">The 4&ndash;5 mb/d Gulf-origin deficit binds</div>
-          <p>Baker's deficit case: Hormuz closure plus DeepStrike damage to Russian export infrastructure. Stocks hit working floors by Q4; product rationing risk becomes real; imports pinned near <b>8 mb/d</b> with Brent 150+. Demand destruction goes global and the de-oiling program becomes doctrine.</p>
-        </div>
+      <div class="ladderpanel rv">
+        <div class="lk">The import-threshold ladder</div>
+        <p class="ln">Post-normalization run-rates, crude imports. The first two clean months of customs prints identify the regime within ~60 days; with the August restock pulse JPMorgan expects, that means the Aug&ndash;Sep prints, released Sep&ndash;Oct.</p>
+        <div class="lrow"><div class="ll">War floor <span>May '26 print</span></div><div class="lbar"><i style="width:65%;background:var(--salmon)"></i><b>7.8</b></div></div>
+        <div class="lrow"><div class="ll">No restock <span>maintenance only; consensus demand overstated 1.0&ndash;1.3</span></div><div class="lbar"><i style="width:85%"></i><b>10.2</b></div></div>
+        <div class="lrow"><div class="ll">24-mo rebuild <span>~250M bbl over two years</span></div><div class="lbar"><i style="width:88.3%"></i><b>10.6</b></div></div>
+        <div class="lrow"><div class="ll">12-mo rebuild <span>~250M bbl in one year</span></div><div class="lbar"><i style="width:91.7%"></i><b>11.0</b></div></div>
+        <div class="lrow"><div class="ll">Buffer doctrine <span>reserve deemed too small; 2&ndash;3 yrs; recreates the phantom optics</span></div><div class="lbar"><i style="width:96.7%;background:var(--blood)"></i><b>11.0&ndash;11.6</b></div></div>
+        <div class="lref">Reference: phantom-era average 11.1&ndash;11.5 &middot; storage headroom exists: above-ground tanks were only 56% filled (Kayrros, Mar '25)</div>
       </div>
     </div>
+
+    <div class="dpanel rv">
+      <div class="lk">The demand arithmetic, crude basis</div>
+      <table class="dtable">
+        <tr><td>True crude consumption, pre-war (refinery runs + direct burn)</td><td><b>14.5&ndash;14.7</b></td></tr>
+        <tr><td class="ind">of which crude processed for product exports</td><td>0.9&ndash;1.1</td></tr>
+        <tr><td class="ind">domestic-use crude consumption</td><td>13.5&ndash;13.7</td></tr>
+        <tr><td>Total liquids demand, CNPC peak (2025)</td><td>15.4</td></tr>
+        <tr><td>Maintenance imports (consumption &minus; 4.3 domestic output, zero stock change)</td><td><b>10.2&ndash;10.4</b></td></tr>
+        <tr><td>Actual imports, 2023&ndash;25</td><td>11.1&ndash;11.5</td></tr>
+        <tr class="hl"><td>Standing overshoot = the phantom</td><td><b>0.8&ndash;1.2</b></td></tr>
+      </table>
+      <p class="dnote">Wartime check: run cuts (&minus;0.6), product export bans (&minus;0.3) and substitution (&minus;0.2) put consumption at 13.5&ndash;13.8, import requirement 9.2&ndash;9.5, actual buying 7.8&ndash;8.1, implied draw 1.1&ndash;1.7 mb/d. Consistent with the drawdown wedge. Cumulative draw through July &asymp;170&ndash;190M bbl; a grind into Q1 '27 reaches 400&ndash;500M, where the 60&ndash;90 day working-stock floor binds.</p>
+    </div>
+
+    <div class="scen3">
+      <div class="scen rv">
+        <div class="sk"><span class="chip" style="border-top:3px dotted #17130E"></span>Bear &middot; ~30&ndash;35% &middot; the phantom unwind</div>
+        <div class="st">Brent 52&ndash;65 &middot; contango &middot; partially realized</div>
+        <p>Clean reopening; Beijing skips the restock; de-oiling becomes doctrine. OPEC+ spare (5&ndash;6 mb/d pre-war) returns, Venezuela ramps through authorized channels, Americas supply grows. The market then prices what this page argues: true consumption &asymp;14.5 and falling, and the ~1 mb/d stockpile bid that absorbed every surplus since 2022 is gone. Balance flips to <b>+1.5&ndash;2.5 mb/d surplus in 2027</b>. The first leg already printed: Brent &minus;25% off the June highs into the reopening.</p>
+        <p class="crk"><b>Cracks:</b> the product-export ban is the trigger. Fully lifted, Chinese refined exports jump 88&ndash;160% from H1 levels (JPM) and Singapore gasoil compresses to $5&ndash;10. Atlantic diesel holds $15&ndash;20 on European closures. Jet the relative winner, the only Chinese product still growing. Expression: long complex Atlantic refiners against short flat price.</p>
+      </div>
+      <div class="scen rv">
+        <div class="sk"><span class="chip" style="border-top:3px solid #17130E"></span>Base &middot; ~45% &middot; rangebound, hard floor</div>
+        <div class="st">Brent 62&ndash;80 &middot; floor at the fill zone</div>
+        <p>The August restock pulse lands as JPMorgan expects (~3 mb/d recovery, part state-directed), the tanker backlog digests in waves, and a war-risk premium lingers while the 60-day framework holds. China restocks 0.4&ndash;0.8 mb/d at the fill zone (imports recovering toward <b>10.5&ndash;11.2</b>); the US refills an SPR at 20-year lows; Japan, Korea and India rebuild against historically thin cover (US stocks lowest since 2004, Cushing near its ~20M bbl floor). Hard floor, soft ceiling: fade rips, buy dips.</p>
+        <p class="crk"><b>Cracks outlast crude:</b> product stocks drew faster than crude, Chinese run cuts removed product supply, and the export ban stays partially in place. Diesel $14&ndash;22, jet $16&ndash;24, gasoline $10&ndash;15, normalizing through mid-2027. Complex margins stay good, off the wartime peak.</p>
+      </div>
+      <div class="scen rv">
+        <div class="sk"><span class="chip" style="border-top:3px dotted #7D0F0F"></span>Bull &middot; ~20&ndash;25% &middot; the restock race</div>
+        <div class="st">Brent 90&ndash;120 on failure &middot; 85&ndash;100 on the race</div>
+        <p>Two triggers. The 60-day framework fails: Iran is demanding strait tolls and claiming control of the lane, war-risk premiums remain elevated, and full 20 mb/d throughput is unlikely before 2027 given damage; re-escalation reprices to 90&ndash;120. Or it holds and the world restocks at once: <b>coordinated Chinese, US, Japanese, Korean and Indian rebuilding of 1.5&ndash;2.5 mb/d for 12+ months</b> meets a backlog-digested market at 85&ndash;100.</p>
+        <p class="crk"><b>Cracks blow out first:</b> diesel $35&ndash;50, jet spiking on military demand plus lost Gulf kerosene. Then demand destruction rolls cracks over before flat price. Cracks weakening while Brent holds is the exit signal.</p>
+      </div>
+    </div>
+
     <div class="fwdnote rv">
-      <p><b>The structural overlay holds in every branch.</b> CNPC dates total demand peak to 2025 at ~15.4 mb/d; transport fuels decline 1&ndash;2% a year on EV, LNG-truck and rail substitution; petrochemicals grow ~5% but on light feedstocks, not crude-intensive runs. Each month of crisis pulls the substitution curve forward, so <i>true consumption trends down in all three scenarios</i>. What differs is the import path around it: the timing and size of the restock wedge. Positioning follows from that wedge, not from any China growth story.</p>
+      <p><b>The sign-flip rule, applied.</b> The supply hole sets the price level, Chinese elasticity sets the cap while stocks last, and Chinese restock policy sets the floor after normalization. True consumption trends down in every branch (CNPC dates the peak to 2025 at ~15.4 mb/d liquids; transport fuels decline 1&ndash;2% a year; petrochemicals grow ~5% on light feedstocks). The phantom supported the 2023&ndash;25 tape, the unwind is the bear case nobody is positioned for, and a buffer-expansion doctrine would recreate the illusion a second time. <i>Watch the August and September customs prints against 10.2 / 10.6 / 11.0 / 11.5, and watch the product-export ban: fully lifted, refined exports jump 88&ndash;160% and cracks reprice before crude does.</i> Positioning follows from the restock wedge, not from any China growth story.</p>
     </div>
   </section>
 
@@ -618,14 +718,14 @@ svg text{font-family:'Archivo',sans-serif}
     <div class="sechead rv"><span class="no">06</span><h2>Where the thesis lands</h2><span class="rule"></span></div>
     <div class="position rv">
       <div class="vk">Position</div>
-      <p>The stockpiling-inflated-demand mechanism is real and quantifiable: <b>&asymp;1 mb/d of builds, effectively 100% of marginal import growth in '24&ndash;'25</b>, cumulating to &asymp;0.9&ndash;1.0B barrels since 2022. The honest attribution is <em>general war-proofing against the world Project 2025 described</em>: sanctions risk, supplier decapitation, Taiwan optionality. Beijing hedged the distribution of outcomes; the tail event happened. Two caveats bound the trade. The 1.4B barrels cover ~120 nominal days but only <em>60&ndash;90 days of working stock</em> before refiners cut runs. And the import cut was partly forced, not purely chosen. Both imply eventual snap-back plus mandatory restocking once the strait normalizes. <b>Structural bull case for crude into 2027.</b></p>
+      <p>The stockpiling-inflated-demand mechanism is real and quantifiable: <b>&asymp;1 mb/d of builds, effectively 100% of marginal import growth in '24&ndash;'25</b>, cumulating to &asymp;0.9&ndash;1.0B barrels since 2022. The honest attribution is <em>general war-proofing against the world Project 2025 described</em>: sanctions risk, supplier decapitation, Taiwan optionality. Beijing hedged the distribution of outcomes; the tail event happened. Two caveats bound the trade. The 1.4B barrels cover ~120 nominal days but only <em>60&ndash;90 days of working stock</em> before refiners cut runs. And the import cut was partly forced, not purely chosen. Normalization then arrived faster than the base case: by early July Brent sat at pre-war $72, inside Beijing's documented fill zone, with June seaborne imports the lowest since 2016. <b>The unwind leg printed first; the restock bid from August is the next trade, a floor under a glutted market rather than a flat-price rally.</b></p>
     </div>
   </section>
 
   <!-- ============ SOURCES ============ -->
   <footer class="sources rv">
     <div><b>Data</b>EIA Today in Energy (Oct 2025; Apr 2026) and STEO &middot; Oxford Institute for Energy Studies, "Drivers of China's crude buying binge" (Feb 2026) &middot; China GAC customs and NBS via JPMorgan / SocGen / Morgan Stanley notes (Fortune, CNBC, Jun 2026) &middot; IEA Oil 2025 and "Oil demand for fuels in China has reached a plateau" &middot; Columbia CGEP, "China's Oil Demand, Imports and Supply Security" (May 2025).</div>
-    <div><b>Events and strategy</b>Rhodium Group, "Electric Trucks and the Future of Chinese Oil Demand" (Jul 2025) &middot; Baker Institute: Collins, "Energy Stockpiling as a China Strategic Warning Indicator" (Jun 2024); "China's Strait of Hormuz Playbook" (May 2026) &middot; CRS R45281 &middot; Heritage Foundation, Mandate for Leadership: The Conservative Promise (Apr 2023), Energy, Defense and State chapters &middot; National Interest (Jun 2026).</div>
+    <div><b>Events and strategy</b>Rhodium Group, "Electric Trucks and the Future of Chinese Oil Demand" (Jul 2025) &middot; Baker Institute: Collins, "Energy Stockpiling as a China Strategic Warning Indicator" (Jun 2024); "China's Strait of Hormuz Playbook" (May 2026) &middot; CRS R45281 &middot; Heritage Foundation, Mandate for Leadership: The Conservative Promise (Apr 2023), Energy, Defense and State chapters &middot; National Interest (Jun 2026) &middot; Al Jazeera, "With Hormuz reopened, has the oil shortage turned into a glut?" (Jul 2, 2026) &middot; TradingEconomics / Investing.com Brent quotes (Jul 3, 2026) &middot; Investing.com, "China Is Back in the Oil Market" citing JPMorgan (Jun 2026) &middot; Discovery Alert, "China Crude Oil Imports Fall to Record Lows in June 2026."</div>
     <div><b>Method</b>China publishes no inventory data. Curves are quarterly reconstructions: apparent = imports + domestic output; true consumption = apparent minus implied stock change. Build estimates diverge (2025: 0.4&ndash;1.1 mb/d; OIES 0.75 vs EIA 1.1); the wedge shown is an upper-bound reconstruction, cumulative &asymp;0.9&ndash;1.0B bbl vs. total-stock estimates of 1.2&ndash;1.4B. The route-forward panel is scenario projection, not data. Series are illustrative of cited anchors, not official statistics.</div>
   </footer>
 
