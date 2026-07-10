@@ -175,6 +175,11 @@ svg text{font-family:'Archivo',sans-serif}
 .tension .tk2{font-family:'Bricolage Grotesque',sans-serif;font-weight:750;font-size:14px;letter-spacing:.1em;text-transform:uppercase;color:var(--tan-deep);margin-bottom:7px}
 .tension p{font-size:13.5px;line-height:1.6;max-width:1200px}
 .tension p b{color:#fff} .tension p i{color:var(--tan-deep);font-style:normal;font-weight:600}
+.respanel{display:grid;grid-template-columns:1.15fr 1fr;gap:16px;margin-top:14px;background:var(--paper);border:1.5px solid var(--ink);border-top:4px solid var(--blood);padding:16px 18px}
+@media (max-width:900px){.respanel{grid-template-columns:1fr}}
+.res-copy p{font-size:13px;line-height:1.55;color:var(--ink-soft);margin-top:8px}
+.res-copy p b{color:var(--ink)} .res-copy p i{color:var(--blood);font-style:normal;font-weight:600}
+.res-chart{display:flex;align-items:center;min-height:190px}
 .prodleg{display:grid;grid-template-columns:1.15fr 1fr;gap:16px;margin-top:14px;background:var(--paper);border:1.5px solid var(--ink);border-top:4px solid var(--blood);padding:16px 18px}
 @media (max-width:900px){.prodleg{grid-template-columns:1fr}}
 .pl-k{font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:var(--blood)}
@@ -251,7 +256,7 @@ svg text{font-family:'Archivo',sans-serif}
   </header>
 
   <div class="statrow rv">
-    <div class="stat"><div class="n">1.2&ndash;1.4<em>B</em></div><div class="l">bbl total crude stocks, end-2025 (EIA / OIES)</div></div>
+    <div class="stat"><div class="n">0.5&rarr;1.7<em>B</em></div><div class="l">bbl total crude reserves, start-2022 to start-war (EIA / Kpler / CFR)</div></div>
     <div class="stat"><div class="n">+1.1</div><div class="l">mb/d avg. added to inventories in 2025 (EIA)</div></div>
     <div class="stat"><div class="n"><em>&minus;5.3</em></div><div class="l">mb/d import cut Feb&rarr;Jun '26; June seaborne lowest since 2016</div></div>
     <div class="stat"><div class="n">1/5<em>&times;</em></div><div class="l">domestic price volatility vs Brent through the March spike</div></div>
@@ -327,7 +332,7 @@ svg text{font-family:'Archivo',sans-serif}
 
         <g>
           <text class="halo" x="860" y="174" font-size="12" font-weight="700" fill="#6B5F45" letter-spacing="2" text-anchor="middle">STOCKPILE BUILDS &middot; &asymp;0.6&ndash;1.9 MB/D</text>
-          <text class="halo" x="860" y="189" font-size="10" fill="#6B5F45" text-anchor="middle" letter-spacing="1">&asymp;0.9&ndash;1.0B BBL CUMULATIVE, 2022&ndash;FEB 2026</text>
+          <text class="halo" x="860" y="189" font-size="10" fill="#6B5F45" text-anchor="middle" letter-spacing="1">&asymp;1.2B BBL BUILT &middot; 0.5B &rarr; 1.7B, 2022&ndash;FEB 2026</text>
           <text class="halo" x="1556" y="278" font-size="11" font-weight="700" fill="#7D0F0F" letter-spacing="1" text-anchor="end">DRAWDOWN</text>
           <text class="halo" x="1556" y="291" font-size="10" fill="#7D0F0F" text-anchor="end">&minus;1.5&ndash;1.7 mb/d</text>
         </g>
@@ -532,7 +537,7 @@ svg text{font-family:'Archivo',sans-serif}
           <svg width="26" height="26" viewBox="0 0 26 26"><path d="M6 4 H20 M6 22 H20 M7 4 C5 8 5 18 7 22 M19 4 C21 8 21 18 19 22" stroke="#17130E" stroke-width="1.8" fill="none"/><rect x="7.5" y="13" width="11" height="8" fill="#7D0F0F"/></svg>
           <div class="kt">The wedge, quantified</div>
         </div>
-        <p>Implied stock builds ran <b>&asymp;0.75&ndash;1.1 mb/d in 2025</b> (OIES vs EIA), effectively <i>all marginal import growth</i>, &asymp;7&ndash;10% of headline "demand." Total stocks reached <b>&asymp;1.2&ndash;1.4B bbl</b>: ~360M government plus ~1B commercial, the latter conscripted by directive and the Jan '25 Energy Law.</p>
+        <p>Implied stock builds ran <b>&asymp;0.75&ndash;1.1 mb/d in 2025</b> (OIES vs EIA), effectively <i>all marginal import growth</i>, &asymp;7&ndash;10% of headline "demand." Reserves went from <b>~0.5B bbl at the start of 2022 to ~1.7B at the start of the war</b> &mdash; a ~1.2B build. EIA's conservative onshore-only tally reached ~1.4B by Dec '25 (~360M government + ~1B commercial); including floating and bonded crude the full number runs to ~1.7B.</p>
         <div class="foot">EIA Apr '26 &middot; OIES Feb '26 &middot; Kpler</div>
       </div>
       <div class="card rv">
@@ -550,6 +555,38 @@ svg text{font-family:'Archivo',sans-serif}
         </div>
         <p>Imports cut 11.7 &rarr; 7.8 mb/d with <b>no fuel crisis</b>: domestic prices moved at <i>one-fifth</i> of Brent's volatility. A &minus;3.9 mb/d cut absorbed calmly is only possible if the marginal barrels were never consumption. China alone = <b>74% of the global crude-trade decline</b>, capping Brent near $100 amid a 10 mb/d supply loss.</p>
         <div class="foot">JPMorgan &middot; SocGen &middot; Morgan Stanley</div>
+      </div>
+    </div>
+
+    <div class="respanel rv">
+      <div class="res-copy">
+        <div class="pl-k">The reserve trajectory</div>
+        <div class="pl-t">From ~0.5B to ~1.7B barrels, 2022 to the war</div>
+        <p>China entered 2022 with roughly <b>500M barrels</b> of crude reserves &mdash; an SPR of ~400M against ~500M of government-system capacity, plus a thin commercial base. By the start of the war it held roughly <b>1.7B barrels</b>. EIA's deliberately conservative onshore-only tally reached ~1.4B by December 2025 (~360M government + ~1B commercial) and was still building at ~1.24 mb/d into February; adding floating and Iranian bonded crude that EIA excludes lifts the fuller figure toward <b>1.7B</b>. Either way the build is <i>~1.2B barrels</i>, which ties directly to the wedge.</p>
+      </div>
+      <div class="res-chart">
+        <svg viewBox="0 0 420 210" preserveAspectRatio="xMidYMid meet" width="100%" height="100%">
+          <g font-size="9" fill="#8A7E63" text-anchor="end">
+            <text x="34" y="24">1.8</text><text x="34" y="70">1.4</text><text x="34" y="116">1.0</text><text x="34" y="162">0.6</text>
+          </g>
+          <g stroke="#E3DBC9" stroke-width="1">
+            <line x1="40" y1="20" x2="404" y2="20"/><line x1="40" y1="66" x2="404" y2="66"/>
+            <line x1="40" y1="112" x2="404" y2="112"/><line x1="40" y1="158" x2="404" y2="158"/>
+          </g>
+          <line x1="40" y1="180" x2="404" y2="180" stroke="#17130E" stroke-width="1.3"/>
+          <g font-size="9" fill="#17130E" font-weight="600" letter-spacing="1">
+            <text x="42" y="195">2022</text><text x="150" y="195">2023</text><text x="230" y="195">2024</text><text x="300" y="195">2025</text><text x="366" y="195">war</text>
+          </g>
+          <path d="M46,169 L120,150 L200,120 L290,74 L388,20 L388,180 L46,180 Z" fill="#CFC0A0" fill-opacity=".6"/>
+          <polyline fill="none" stroke="#7D0F0F" stroke-width="2.6" stroke-linejoin="round" points="46,169 120,150 200,120 290,74 388,20"/>
+          <circle cx="46" cy="169" r="3.4" fill="#7D0F0F"/>
+          <circle cx="388" cy="20" r="4" fill="#7D0F0F"/>
+          <line x1="388" y1="46" x2="404" y2="46" stroke="#B7A67F" stroke-width="1" stroke-dasharray="3 3"/>
+          <text class="halo" x="384" y="60" font-size="8.5" fill="#8A7E63" text-anchor="end">EIA onshore ~1.4B</text>
+          <text class="halo" x="52" y="162" font-size="9" font-weight="700" fill="#7D0F0F">~0.5B</text>
+          <text class="halo" x="384" y="16" font-size="9.5" font-weight="700" fill="#7D0F0F" text-anchor="end">~1.7B</text>
+          <text x="40" y="12" font-size="8.5" fill="#8A7E63" letter-spacing="1">CHINA TOTAL CRUDE RESERVES &middot; BILLION BBL</text>
+        </svg>
       </div>
     </div>
 
@@ -799,15 +836,15 @@ svg text{font-family:'Archivo',sans-serif}
     <div class="sechead rv"><span class="no">07</span><h2>Where the thesis lands</h2><span class="rule"></span></div>
     <div class="position rv">
       <div class="vk">Position</div>
-      <p>The stockpiling-inflated-demand mechanism is real and quantifiable: <b>&asymp;1 mb/d of builds, effectively 100% of marginal import growth in '24&ndash;'25</b>, cumulating to &asymp;0.9&ndash;1.0B barrels since 2022. The honest attribution is <em>general war-proofing against the world Project 2025 described</em>: sanctions risk, supplier decapitation, Taiwan optionality. Beijing hedged the distribution of outcomes; the tail event happened. Two caveats bound the trade. The 1.4B barrels cover ~120 nominal days but only <em>60&ndash;90 days of working stock</em> before refiners cut runs. And the import cut was partly forced, not purely chosen. Then the picture sharpened on both sides. The confirmations: China buys hand over fist in the <b>$65–75 band</b>, offsets with record domestic output near 4.5 mb/d, and drew stocks before buying, exposing a comfort floor above true operational minimums. The escalation: Jul 7 tanker strikes on the US-Navy lane, GL X revoked, Hormuz threat "severe." <b>Base case is a managed 75–100 range</b> — China out on rips, in on dips, a political ceiling into November, Hormuz a permanent wildcard. But the asymmetry is up: a record-adjacent short base, thin inventories and a re-escalating chokepoint mean a supply break unwinds the suppression bid and the shorts together. <b>Quiet base, fat tails, upside tail fattest.</b></p>
+      <p>The stockpiling-inflated-demand mechanism is real and quantifiable: <b>&asymp;1 mb/d of builds, effectively 100% of marginal import growth in '24&ndash;'25</b>, cumulating to ~1.2B barrels since 2022 (reserves ~0.5B &rarr; ~1.7B into the war). The honest attribution is <em>general war-proofing against the world Project 2025 described</em>: sanctions risk, supplier decapitation, Taiwan optionality. Beijing hedged the distribution of outcomes; the tail event happened. Two caveats bound the trade. The ~1.7B barrels cover ~150 nominal days but only <em>60&ndash;90 days of working stock</em> before refiners cut runs. And the import cut was partly forced, not purely chosen. Then the picture sharpened on both sides. The confirmations: China buys hand over fist in the <b>$65–75 band</b>, offsets with record domestic output near 4.5 mb/d, and drew stocks before buying, exposing a comfort floor above true operational minimums. The escalation: Jul 7 tanker strikes on the US-Navy lane, GL X revoked, Hormuz threat "severe." <b>Base case is a managed 75–100 range</b> — China out on rips, in on dips, a political ceiling into November, Hormuz a permanent wildcard. But the asymmetry is up: a record-adjacent short base, thin inventories and a re-escalating chokepoint mean a supply break unwinds the suppression bid and the shorts together. <b>Quiet base, fat tails, upside tail fattest.</b></p>
     </div>
   </section>
 
   <!-- ============ SOURCES ============ -->
   <footer class="sources rv">
-    <div><b>Data</b>EIA Today in Energy (Oct 2025; Apr 2026) and STEO &middot; Oxford Institute for Energy Studies, "Drivers of China's crude buying binge" (Feb 2026) &middot; China GAC customs and NBS via JPMorgan / SocGen / Morgan Stanley notes (Fortune, CNBC, Jun 2026) &middot; IEA Oil 2025 and "Oil demand for fuels in China has reached a plateau" &middot; Columbia CGEP, "China's Oil Demand, Imports and Supply Security" (May 2025).</div>
+    <div><b>Data</b>EIA Today in Energy (Oct 2025; Apr 2026) and STEO &middot; Oxford Institute for Energy Studies, "Drivers of China's crude buying binge" (Feb 2026) &middot; China GAC customs and NBS via JPMorgan / SocGen / Morgan Stanley notes (Fortune, CNBC, Jun 2026) &middot; IEA Oil 2025 and "Oil demand for fuels in China has reached a plateau" &middot; Columbia CGEP, "China's Oil Demand, Imports and Supply Security" (May 2025) &middot; EIA, "China, the US, and Japan hold most strategic oil inventories in 2025" (Apr 2026) and "Expanding strategic oil stocks in China support crude oil prices" &middot; Wikipedia, "Strategic petroleum reserve (China)" (SPR ~400M of ~500M capacity, 2022) &middot; OilPrice / CFR (Rush Doshi), China total reserves 1.2&ndash;1.3B+ onshore (Mar 2026) &middot; Kpler / Vortexa / Kayrros floating-storage estimates.</div>
     <div><b>Events and strategy</b>Rhodium Group, "Electric Trucks and the Future of Chinese Oil Demand" (Jul 2025) &middot; Baker Institute: Collins, "Energy Stockpiling as a China Strategic Warning Indicator" (Jun 2024); "China's Strait of Hormuz Playbook" (May 2026) &middot; CRS R45281 &middot; Heritage Foundation, Mandate for Leadership: The Conservative Promise (Apr 2023), Energy, Defense and State chapters &middot; National Interest (Jun 2026) &middot; Al Jazeera, "With Hormuz reopened, has the oil shortage turned into a glut?" (Jul 2, 2026) &middot; TradingEconomics / Investing.com Brent quotes (Jul 3, 2026) &middot; Investing.com, "China Is Back in the Oil Market" citing JPMorgan (Jun 2026) &middot; Discovery Alert, "China Crude Oil Imports Fall to Record Lows in June 2026" &middot; CNBC, Iran tanker attacks / US retaliation / GL X revoked and "Strait threat level severe" (Jul 7, 2026) &middot; CBS News US-Iran live updates (Jul 7, 2026) &middot; EIA China crude production series and July STEO &middot; Berenberg via CNBC on midterm oil politics (Jul 3, 2026) &middot; CFTC Commitments of Traders (managed money) &middot; barchart CL2-CL3 and 3-2-1 crack spread charts (Jul 8, 2026).</div>
-    <div><b>Method</b>China publishes no inventory data. Curves are quarterly reconstructions: apparent = imports + domestic output; true consumption = apparent minus implied stock change. Build estimates diverge (2025: 0.4&ndash;1.1 mb/d; OIES 0.75 vs EIA 1.1); the wedge shown is an upper-bound reconstruction, cumulative &asymp;0.9&ndash;1.0B bbl vs. total-stock estimates of 1.2&ndash;1.4B. The route-forward panel is scenario projection, not data. Series are illustrative of cited anchors, not official statistics.</div>
+    <div><b>Method</b>China publishes no inventory data. Curves are quarterly reconstructions: apparent = imports + domestic output; true consumption = apparent minus implied stock change. Build estimates diverge (2025: 0.4&ndash;1.1 mb/d; OIES 0.75 vs EIA 1.1); the wedge shown tracks reserves from ~0.5B bbl (start 2022) to ~1.7B (start of war), a ~1.2B build; EIA's conservative onshore-only estimate is ~1.4B by Dec '25, with floating and bonded crude lifting the fuller figure toward ~1.7B. The route-forward panel is scenario projection, not data. Series are illustrative of cited anchors, not official statistics.</div>
   </footer>
 
 </div>
